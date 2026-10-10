@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load trained model
-model = joblib.load("data/model.pkl")
+model = joblib.load("model.pkl")
 app = Flask(__name__)
 
 @app.route("/predict", methods=["POST"])

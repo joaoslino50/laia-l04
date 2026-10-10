@@ -1,4 +1,3 @@
-import os
 from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 import joblib
@@ -11,6 +10,5 @@ model = LogisticRegression(max_iter=200)
 model.fit(X, y)
 
 # Save model
-os.makedirs("data", exist_ok=True)
-joblib.dump(model, "data/model.pkl")
-print("✅ Model trained and saved as data/model.pkl")
+joblib.dump(model, "model.pkl")
+print("✅ Model trained and saved as model.pkl")
